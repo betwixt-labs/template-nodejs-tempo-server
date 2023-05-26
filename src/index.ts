@@ -9,8 +9,10 @@ const config = new TempoRouterConfiguration();
 const registry = new Services.TempoServiceRegistry(logger);
 
 const router = new TempoRouter<object>(logger, registry, config);
-logger.info(`Listening on port 3000`);
+const listenPort = process.env.LISTEN_PORT || 3000; 
+logger.info(`Listening on port: ${listenPort}`);
+process.env.USER_ID; 
 const server = createServer(async (req: IncomingMessage, res: ServerResponse) => {
 	await router.process(req, res, {});
 });
-server.listen(443);
+server.listen(Number(listenPort), "0.0.0.0")
