@@ -1,5 +1,7 @@
 ## Template: node-tempo-server
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/sw7A3N?referralCode=GTjLci)
+
 This template demonstrates using the [`Tempo`](https://github.com/betwixt-labs/tempo) remote procedure call framework to add real-time, end-to-end typesafe APIs with a Node.js HTTP server.
 
 [`index.ts`](https://github.com/betwixt-labs/template-nodejs-tempo-server/blob/main/src/index.ts) is the content of the server script.
