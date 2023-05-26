@@ -1,5 +1,5 @@
 {
-	"name": "template-railway-tempo",
+	"name": "template-nodejs-server-tempo",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
