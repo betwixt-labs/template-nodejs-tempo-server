@@ -1,0 +1,22 @@
+{
+	"name": "template-railway-tempo",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node18 --outdir=dist --sourcemap",
+		"dev": "ts-node ./src/index.ts",
+		"build:schemas": "bebopc",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@types/node": "^20.2.4 ",
+		"bebop-tools": "^2.7.0",
+		"esbuild": "^0.17.19",
+		"ts-node": "^10.9.1",
+		"vitest": "^0.31.0"
+	},
+	"dependencies": {
+		"@tempojs/node-http-router": "^0.0.1",
+		"bebop": "^2.7.0"
+	}
+}
