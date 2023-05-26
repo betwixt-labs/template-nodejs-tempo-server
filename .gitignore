@@ -3,6 +3,6 @@
 *-lock.*
 *.lock
 *.log
-*.gen.ts
+
 
 /dist
