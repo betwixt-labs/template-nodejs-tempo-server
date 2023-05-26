@@ -13,4 +13,4 @@ logger.info(`Listening on port 3000`);
 const server = createServer(async (req: IncomingMessage, res: ServerResponse) => {
 	await router.process(req, res, {});
 });
-server.listen(3000);
+server.listen(443);
