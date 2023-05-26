@@ -10,7 +10,7 @@ const registry = new Services.TempoServiceRegistry(logger);
 
 const router = new TempoRouter<object>(logger, registry, config);
 const listenPort = process.env.PORT || 3000; 
-const hostname = process.env.HOSTNAME || "0.0.0.0";
+const hostname = process.env.LISTEN_HOSTNAME || "0.0.0.0";
 const server = createServer(async (req: IncomingMessage, res: ServerResponse) => {
 	await router.process(req, res, {});
 });
