@@ -11,13 +11,13 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.2.4 ",
-		"bebop-tools": "^2.7.0",
+		"bebop-tools": "^2.7.1",
 		"esbuild": "^0.17.19",
 		"ts-node": "^10.9.1",
 		"vitest": "^0.31.0"
 	},
 	"dependencies": {
 		"@tempojs/node-http-router": "^0.0.2",
-		"bebop": "^2.7.0"
+		"bebop": "^2.7.1"
 	}
 }
